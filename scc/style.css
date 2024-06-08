@@ -1,6 +1,8 @@
 :root {
     --header-color: rgb(34, 37, 49);
     --menu-color: rgb(111, 134, 255);
+    --bg-color-light: #868fb4;
+    --bg-color-dark: #3a4367;
 }
 
 body {
@@ -160,8 +162,7 @@ section div {
 
 
 .card {
-
-    background-color: #3a4367;
+    background-color: var(--bg-color-dark);
     color: #FFF;
     width: 250px;
     border-radius: 15px;
@@ -170,9 +171,7 @@ section div {
 }
 
 .card:hover {
-
     transform: scale(1.03) rotate(3deg);
-
 }
 
 .card-info {
@@ -180,14 +179,13 @@ section div {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-
 }
 
 .card-info a,
 .mailto a {
     padding: 5px;
     margin: 2px 0;
-    background-color: #868fb4;
+    background-color: var(--bg-color-light);
     border-radius: 5px;
     color: #FFF;
     text-decoration: none;
@@ -213,10 +211,10 @@ section a:hover {
     width: 100%;
     height: 140px;
     background-size: cover;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     border-radius: 15px;
     margin: 0 auto;
-
+    box-shadow: 4px 4px 4px var(--bg-color-light);
 }
 
 .card1 {
@@ -253,13 +251,25 @@ p {
     margin: 0;
 }
 
+.mailto {
+    margin: 20px 0;
+}
+
+.mailto a {
+    padding: 5px 10px;
+}
+
 .bg1 {
-    background-color: #3a4367;
+    background-color: var(--bg-color-dark);
     color: #FFF;
 }
 
 .bg2 {
-    background-color: #868fb4;
+    background-color: var(--bg-color-light);
+}
+
+.contact-info {
+    margin: 0 auto;
 }
 
 footer {
@@ -310,7 +320,7 @@ footer {
     }
 
     .container {
-        background-color: rgb(111, 134, 255, .7);
+        background-color: #6f86ffb3;
         background-blend-mode: color;
         border-radius: 20px;
         width: fit-content;
