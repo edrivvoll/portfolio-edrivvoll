@@ -4,7 +4,7 @@ My personal frontend developer portfolio, built with React and Vite. Showcases t
 
 ## Live site
 
-[holidaze-bnb.netlify.app](https://holidaze-bnb.netlify.app) ← *(update with your portfolio URL once deployed)*
+*(update with your portfolio URL once deployed)*
 
 ## Projects featured
 
